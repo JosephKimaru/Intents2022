@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 Handler().postDelayed({
                     startActivity(Intent(this, MainActivity2::class.java))
-                }, 20000)
+                }, 2000)
             }
         }
     }
