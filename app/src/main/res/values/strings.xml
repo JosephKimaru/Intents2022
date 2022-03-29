@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">App</string>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz_app">Quiz App</string>
+    <string name="name">Name</string>
+    <string name="start">Start</string>
+    <string name="welcome">Welcome</string>
+    <string name="_0_10">0/10</string>
+    <string name="australia">Australia</string>
+    <string name="submit">SUBMIT</string>
+    <string name="question">What country does this flag belong?</string>
 </resources>

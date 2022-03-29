@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding!!.root)
 
 
-        var buton = binding!!.btn
-        var textarea = binding!!.textarea
+        var buton = binding!!.btnStart
+        var textarea = binding!!.etName
 
         buton.setOnClickListener {
             if(textarea.text.toString().isEmpty())
@@ -25,8 +25,9 @@ class MainActivity : AppCompatActivity() {
                 makeText(this, "Please enter you name", LENGTH_LONG).show()
             }else{
                 Handler().postDelayed({
-                    startActivity(Intent(this, MainActivity2::class.java))
+                    startActivity(Intent(this, QuestionsActivity::class.java))
                 }, 2000)
+                intent.putExtra(Constants.USER_NAME, binding!!.etName.text.toString())
             }
         }
     }
